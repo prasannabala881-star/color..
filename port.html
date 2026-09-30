@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prasanna | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: pink;
+            color: #222;
+        }
+
+        
+        header {
+            background: pro.avif;
+            padding: 20px 8%;
+            position: sticky;
+            top: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h2 {
+            color: black;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #60a5fa;
+        }
+
+        /* Home */
+        .home {
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .home h1 {
+            font-size: 50px;
+        }
+
+        .home span {
+            color: #2563eb;
+        }
+
+        .home h3 {
+            font-size: 28px;
+            margin: 15px;
+        }
+
+        .home p {
+            max-width: 600px;
+            line-height: 1.7;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background: #2563eb;
+            color: black;
+            text-decoration: none;
+            border-radius: 25px;
+        }
+
+        /* Sections */
+        section {
+            padding: 70px 10%;
+            text-align: center;
+        }
+
+        .title {
+            font-size: 35px;
+            margin-bottom: 30px;
+        }
+
+        .about p {
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.8;
+        }
+
+        /* Skills */
+        .skills, .projects {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .skill, .card {
+            background: pro.avif;
+            padding: 25px;
+            width: 220px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px #ddd;
+            transition: 0.3s;
+        }
+
+        .skill:hover, .card:hover {
+            transform: translateY(-8px);
+        }
+
+        /* Contact */
+        .contact {
+            background: pro.avif;
+        }
+
+        /* Footer */
+        footer {
+            background: pro.avif;
+            color: black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 12px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .home h1 {
+                font-size: 35px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    
+    <header>
+        <nav>
+            <h2>Prasanna</h2>
+
+
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section class="home" id="home">
+        <div>
+            <h1>Hi, I'm <span>Prasanna</span></h1>
+            <h3>Software Developer</h3>
+
+            <p>
+                I am a BCA AI student interested in UI/UX Design,
+                Python and Java programming.
+            </p>
+
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+        <h2 class="title">About Me</h2>
+
+        <p>
+            I am currently studying BCA Artificial Intelligence.
+            I am passionate about software development, UI/UX design,
+            Python and Java. My goal is to improve my technical skills
+            and become a successful software developer.
+        </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2 class="title">My Skills</h2>
+
+        <div class="skills">
+            <div class="skill">Python</div>
+            <div class="skill">Java</div>
+            <div class="skill">HTML & CSS</div>
+            <div class="skill">UI/UX Design</div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2 class="title">My Projects</h2>
+
+        <div class="projects">
+
+            <div class="card">
+                <h3>Attendance System</h3>
+                <p>Student attendance management website.</p>
+            </div>
+
+            <div class="card">
+                <h3>AI Disease Prediction</h3>
+                <p>AI based disease prediction project.</p>
+            </div>
+
+            <div class="card">
+                <h3>Portfolio</h3>
+                <p>Personal portfolio website using HTML and CSS.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h2 class="title">Contact Me</h2>
+
+        <p>Email: prasannabala881@gmail.com</p>
+        <p>Location: Tirunelveli, Tamil Nadu</p>
+    </section>
+
+    <footer>
+        <p>© 2026 Prasanna | Portfolio</p>
+    </footer>
+
+</body>
+</html>
